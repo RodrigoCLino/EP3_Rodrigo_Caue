@@ -9,17 +9,19 @@ class Jogo:
        self.window.mainloop()
    
    def recebe_jogada(self,linha,coluna):
-       if self.turn % 2 == 0:
+       if self.turn == 1:
           self.matriz_geral[linha][coluna]="X"
           self.verifica_ganhador("X")
           print(self.matriz_geral)
           print(self.lista_jogadas)
-       else:
+          self.turn==2
+       elif self.turn==2:
           self.matriz_geral[linha][coluna]="O"
           self.verifica_ganhador("O")
           print(self.matriz_geral)
           print(self.lista_jogadas)
-       self.turn += 1
+          self.turn==1
+       
        
    def verifica_ganhador(self,jogador):
         self.lista_jogadas.append(jogador)
