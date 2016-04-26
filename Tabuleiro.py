@@ -77,15 +77,15 @@ class Tabuleiro:
            self.botão0_0.configure(font="Arial 35")
            self.turn = 2
            self.jogo.recebe_jogada(0,0)
-           self.verifica()
            self.label_turno.configure(text="Turno de: O ")
+           self.verifica()
         elif self.turn == 2:
            self.botão0_0.configure(text=" O ")
            self.botão0_0.configure(font="Arial 35")
            self.turn = 1
            self.jogo.recebe_jogada(0,0)
-           self.verifica()
            self.label_turno.configure(text="Turno de: X ")
+           self.verifica()
         self.botão0_0.configure(state="disabled")
     
     def botão0_1_clicado(self):        
@@ -94,15 +94,15 @@ class Tabuleiro:
            self.botão0_1.configure(font="Arial 35")
            self.turn = 2
            self.jogo.recebe_jogada(0,1)
-           self.verifica()
            self.label_turno.configure(text="Turno de: O ")
+           self.verifica()
         else:
            self.botão0_1.configure(text=" O ")
            self.botão0_1.configure(font="Arial 35")
            self.turn = 1
            self.jogo.recebe_jogada(0,1)
-           self.verifica()
            self.label_turno.configure(text="Turno de: X ")
+           self.verifica()
         self.botão0_1.configure(state= "disabled")
         
     def botão0_2_clicado(self):
@@ -111,15 +111,15 @@ class Tabuleiro:
            self.botão0_2.configure(font="Arial 35")
            self.turn = 2
            self.jogo.recebe_jogada(0,2)
-           self.verifica()
            self.label_turno.configure(text="Turno de: O ")
+           self.verifica()
         else:
            self.botão0_2.configure(text=" O ")
            self.botão0_2.configure(font="Arial 35")
            self.turn = 1
            self.jogo.recebe_jogada(0,2)
-           self.verifica()
            self.label_turno.configure(text="Turno de: X ")
+           self.verifica()
         self.botão0_2.configure(state= "disabled")      
           
     def botão1_0_clicado(self):
@@ -128,15 +128,15 @@ class Tabuleiro:
            self.botão1_0.configure(font="Arial 35")
            self.turn = 2
            self.jogo.recebe_jogada(1,0)
-           self.verifica()
            self.label_turno.configure(text="Turno de: O ")
+           self.verifica()
         else:
            self.botão1_0.configure(text=" O ")
            self.botão1_0.configure(font="Arial 35")
            self.turn = 1
            self.jogo.recebe_jogada(1,0)
-           self.verifica()
            self.label_turno.configure(text="Turno de: X ")
+           self.verifica()
         self.botão1_0.configure(state= "disabled")
         
     def botão1_1_clicado(self):
@@ -145,15 +145,15 @@ class Tabuleiro:
            self.botão1_1.configure(font="Arial 35")
            self.turn = 2
            self.jogo.recebe_jogada(1,1)
-           self.verifica()
            self.label_turno.configure(text="Turno de: O ")
+           self.verifica()
         else:
            self.botão1_1.configure(text=" O ")
            self.botão1_1.configure(font="Arial 35")
            self.turn = 1
            self.jogo.recebe_jogada(1,1)
-           self.verifica()
            self.label_turno.configure(text="Turno de: X ")
+           self.verifica()
         self.botão1_1.configure(state= "disabled")
         
     def botão1_2_clicado(self):
@@ -162,15 +162,15 @@ class Tabuleiro:
            self.botão1_2.configure(font="Arial 35")
            self.turn = 2
            self.jogo.recebe_jogada(1,2)
-           self.verifica()
            self.label_turno.configure(text="Turno de: O ")
+           self.verifica()
         else:
            self.botão1_2.configure(text=" O ")
            self.botão1_2.configure(font="Arial 35")
            self.turn = 1
            self.jogo.recebe_jogada(1,2)
-           self.verifica()
            self.label_turno.configure(text="Turno de: X ")
+           self.verifica()
         self.botão1_2.configure(state= "disabled")         
             
     def botão2_0_clicado(self):
@@ -179,15 +179,15 @@ class Tabuleiro:
            self.botão2_0.configure(font="Arial 35")
            self.turn = 2
            self.jogo.recebe_jogada(2,0)
-           self.verifica()
            self.label_turno.configure(text="Turno de: O ")
+           self.verifica()
         else:
            self.botão2_0.configure(text=" O ")
            self.botão2_0.configure(font="Arial 35")
            self.turn = 1
            self.jogo.recebe_jogada(2,0)
-           self.verifica()
            self.label_turno.configure(text="Turno de: X ")
+           self.verifica()
         self.botão2_0.configure(state= "disabled")
         
     def botão2_1_clicado(self):
@@ -196,15 +196,15 @@ class Tabuleiro:
            self.botão2_1.configure(font="Arial 35")
            self.turn = 2
            self.jogo.recebe_jogada(2,1)
-           self.verifica()
            self.label_turno.configure(text="Turno de: O ")
+           self.verifica()
         else:
            self.botão2_1.configure(text=" O ")
            self.botão2_1.configure(font="Arial 35")
            self.turn = 1
            self.jogo.recebe_jogada(2,1)
-           self.verifica()
            self.label_turno.configure(text="Turno de: X ")
+           self.verifica()
         self.botão2_1.configure(state= "disabled")
         
     def botão2_2_clicado(self):
@@ -213,15 +213,15 @@ class Tabuleiro:
            self.botão2_2.configure(font="Arial 35")
            self.turn = 2
            self.jogo.recebe_jogada(2,2)
-           self.verifica()
            self.label_turno.configure(text="Turno de: O ")
+           self.verifica()
         else:
            self.botão2_2.configure(text=" O ")
            self.botão2_2.configure(font="Arial 35")
            self.turn = 2
            self.jogo.recebe_jogada(2,2)
-           self.verifica()
            self.label_turno.configure(text="Turno de: X ")
+           self.verifica()
         self.botão2_2.configure(state= "disabled")
         
     def verifica(self): 
