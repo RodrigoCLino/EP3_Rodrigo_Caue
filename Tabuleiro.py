@@ -1,6 +1,6 @@
 import tkinter as tk
 
-from Jogo import Jogo
+import Jogo
 
 class Tabuleiro:
     def __init__(self):
@@ -16,7 +16,7 @@ class Tabuleiro:
         self.window.columnconfigure(0, minsize=100, weight=1)
         self.window.columnconfigure(1, minsize=100, weight=1)
         self.window.columnconfigure(2, minsize=100, weight=1)
-        self.Jogo.Jogo()
+        self.jogo = Jogo.Jogo()
         
         #Botoões
         self.botão0_0 = tk.Button(self.window)
@@ -76,12 +76,12 @@ class Tabuleiro:
            self.botão0_0.configure(text=" X ")
            self.botão0_0.configure(font="Arial 50")
            self.matriz_geral[0][0]="X"
-           self.Jogo.verifica_ganhador("X")
+           self.jogo.verifica_ganhador("X")
         else:
            self.botão0_0.configure(text=" O ")
            self.botão0_0.configure(font="Arial 50")
            self.matriz_geral[0][0]="O"
-           self.Jogo.verifica_ganhador("O")
+           self.jogo.verifica_ganhador("O")
         self.turn += 1
         print(self.turn)
         self.botão0_0.configure(state="disabled")
@@ -92,12 +92,12 @@ class Tabuleiro:
            self.botão0_1.configure(text=" X ")
            self.botão0_1.configure(font="Arial 50")
            self.matriz_geral[0][1]="X"
-           self.Jogo.verifica_ganhador("X")
+           self.jogo.verifica_ganhador("X")
         else:
            self.botão0_1.configure(text=" O ")
            self.botão0_1.configure(font="Arial 50")
            self.matriz_geral[0][1]="O"
-           self.Jogo.verifica_ganhador("O")
+           self.jogo.verifica_ganhador("O")
         self.turn += 1
         self.botão0_1.configure(state= "disabled")
         
@@ -107,12 +107,12 @@ class Tabuleiro:
            self.botão0_2.configure(text=" X ")
            self.botão0_2.configure(font="Arial 50")
            self.matriz_geral[0][2]="X"
-           self.Jogo.verifica_ganhador("X")
+           self.jogo.verifica_ganhador("X")
         else:
            self.botão0_2.configure(text=" O ")
            self.botão0_2.configure(font="Arial 50")
            self.matriz_geral[0][2]="O"
-           self.Jogo.verifica_ganhador("O")
+           self.jogo.verifica_ganhador("O")
         self.turn += 1
         self.botão0_2.configure(state= "disabled")      
           
@@ -122,12 +122,12 @@ class Tabuleiro:
            self.botão1_0.configure(text=" X ")
            self.botão1_0.configure(font="Arial 50")
            self.matriz_geral[1][0]="X"
-           self.Jogo.verifica_ganhador("X")
+           self.jogo.verifica_ganhador("X")
         else:
            self.botão1_0.configure(text=" O ")
            self.botão1_0.configure(font="Arial 50")
            self.matriz_geral[1][0]="O"
-           self.Jogo.verifica_ganhador("O")
+           self.jogo.verifica_ganhador("O")
         self.turn += 1
         self.botão1_0.configure(state= "disabled")
         
@@ -137,12 +137,12 @@ class Tabuleiro:
            self.botão1_1.configure(text=" X ")
            self.botão1_1.configure(font="Arial 50")
            self.matriz_geral[1][1]="X"
-           self.Jogo.verifica_ganhador("X")
+           self.jogo.verifica_ganhador("X")
         else:
            self.botão1_1.configure(text=" O ")
            self.botão1_1.configure(font="Arial 50")
            self.matriz_geral[1][1]="O"
-           self.Jogo.verifica_ganhador("O")
+           self.jogo.verifica_ganhador("O")
         self.turn += 1
         self.botão1_1.configure(state= "disabled")
         
@@ -152,12 +152,12 @@ class Tabuleiro:
            self.botão1_2.configure(text=" X ")
            self.botão1_2.configure(font="Arial 50")
            self.matriz_geral[1][2]="X"
-           self.Jogo.verifica_ganhador("X")
+           self.jogo.verifica_ganhador("X")
         else:
            self.botão1_2.configure(text=" O ")
            self.botão1_2.configure(font="Arial 50")
            self.matriz_geral[1][2]="O"
-           self.Jogo.verifica_ganhador("O")
+           self.jogo.verifica_ganhador("O")
         self.turn += 1
         self.botão1_2.configure(state= "disabled")         
             
@@ -167,12 +167,12 @@ class Tabuleiro:
            self.botão2_0.configure(text=" X ")
            self.botão2_0.configure(font="Arial 50")
            self.matriz_geral[2][0]="X"
-           self.Jogo.verifica_ganhador("X")
+           self.jogo.verifica_ganhador("X")
         else:
            self.botão2_0.configure(text=" O ")
            self.botão2_0.configure(font="Arial 50")
            self.matriz_geral[2][0]="O"
-           self.Jogo.verifica_ganhador("O")
+           self.jogo.verifica_ganhador("O")
         self.turn += 1
         self.botão2_0.configure(state= "disabled")
         
@@ -182,12 +182,12 @@ class Tabuleiro:
            self.botão2_1.configure(text=" X ")
            self.botão2_1.configure(font="Arial 50")
            self.matriz_geral[2][1]="X"
-           self.Jogo.verifica_ganhador("X")
+           self.jogo.verifica_ganhador("X")
         else:
            self.botão2_1.configure(text=" O ")
            self.botão2_1.configure(font="Arial 50")
            self.matriz_geral[2][1]="O"
-           self.Jogo.verifica_ganhador("O")
+           self.jogo.verifica_ganhador("O")
         self.turn += 1
         self.botão2_1.configure(state= "disabled")
         
@@ -197,12 +197,12 @@ class Tabuleiro:
            self.botão2_2.configure(text=" X ")
            self.botão2_2.configure(font="Arial 50")
            self.matriz_geral[2][2]="X"
-           self.Jogo.verifica_ganhador("X")
+           self.jogo.verifica_ganhador("X")
         else:
            self.botão2_2.configure(text=" O ")
            self.botão2_2.configure(font="Arial 50")
            self.matriz_geral[2][2]="O"
-           self.Jogo.verifica_ganhador("O")
+           self.jogo.verifica_ganhador("O")
         self.turn += 1
         self.botão2_2.configure(state= "disabled")
 

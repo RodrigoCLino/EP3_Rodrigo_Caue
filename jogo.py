@@ -38,7 +38,4 @@ class Jogo:
         elif self.matriz_geral[0][2] == jogador and self.matriz_geral[1][1] == jogador and self.matriz_geral[2][0] == jogador:
             return self.label_turno.configure(text="Vitoria Jogador {0}" .format(jogador))
    
-   #def limpa_jogadas():
-
-Tic = Jogo()
-Tic.iniciar()
+   def limpa_jogadas():
