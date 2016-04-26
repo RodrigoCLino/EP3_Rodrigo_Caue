@@ -10,7 +10,7 @@ class Tabuleiro:
         #Interface
         self.window = tk.Tk()
         self.window.title("Jogo da Velha")
-        self.window.geometry("300x330+100+100")
+        self.window.geometry("500x550+100+100")
         self.window.rowconfigure(0, minsize=100, weight=1)
         self.window.rowconfigure(1, minsize=100, weight=1)
         self.window.rowconfigure(2, minsize=100, weight=1)
@@ -56,6 +56,11 @@ class Tabuleiro:
         self.botão2_2 = tk.Button(self.window)
         self.botão2_2.grid(row=2, column=2, sticky="nsew")
         self.botão2_2.configure(command=self.botão2_2_clicado)
+        
+        self.botão_reinicia=tk.Button(self.window)
+        self.botão_reinicia.grid(row=4, column=1, sticky="nsew") 
+        self.botão_reinicia.configure(text="reiniciar")
+        self.botão_reinicia.configure(command=self.botão_reinicia_clicado)
         
         self.turn = 1
          
@@ -214,7 +219,7 @@ class Tabuleiro:
            self.botão2_2.configure(font="Arial 50")
            self.turn = 2
            self.jogo.recebe_jogada(2,2)
-           self.verifica()
+           self.verifica() 
         
     def verifica(self): 
         if self.jogo.verifica_ganhador() == 1:      
@@ -225,6 +230,18 @@ class Tabuleiro:
             self.label_turno.configure(text="Velha")
         else:
             return -1
+   
+    def botão_reinicia_clicado(self):
+        self.jogo.limpa_jogadas()
+        self.botão0_0.configure(text="")
+        self.botão0_1.configure(text="")
+        self.botão0_2.configure(text="")
+        self.botão1_0.configure(text="")
+        self.botão1_1.configure(text="")
+        self.botão1_2.configure(text="")
+        self.botão2_0.configure(text="")
+        self.botão2_1.configure(text="")
+        self.botão2_2.configure(text="")
 
 TicTac = Tabuleiro()
 TicTac.iniciar()

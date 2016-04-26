@@ -56,9 +56,10 @@ class Jogo:
             return 0
             
    def limpa_jogadas(self):
-       self.turn = 1
-       self.matriz_geral=[[0,0,0],[0,0,0],[0,0,0]]
-       self.lista_jogadas = []
+        self.turn = 1
+        self.matriz_geral=[[0,0,0],[0,0,0],[0,0,0]]
+        self.lista_jogadas = []
+           
        
        
        
