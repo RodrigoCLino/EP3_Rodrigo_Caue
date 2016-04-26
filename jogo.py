@@ -12,11 +12,11 @@ class Jogo:
        if self.turn == 1:
           self.matriz_geral[linha][coluna]="X"
           self.turn = 2
-          print(self.matriz_geral)
+          
        elif self.turn == 2:
           self.matriz_geral[linha][coluna]="O"
           self.turn = 1
-          print(self.matriz_geral)
+          
           
    def verifica_ganhador(self):
         
