@@ -3,6 +3,9 @@ class Jogo:
    def __init__(self):
        self.turn = 1
        self.matriz_geral=[[0,0,0],[0,0,0],[0,0,0]]
+       
+   def iniciar(self):
+       self.window.mainloop()
    
    def recebe_jogada(self,linha,coluna):
        if self.turn % 2 == 0:
@@ -38,3 +41,4 @@ class Jogo:
    #def limpa_jogadas():
 
 Tic = Jogo()
+Tic.iniciar()
