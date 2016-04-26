@@ -55,4 +55,10 @@ class Jogo:
         elif self.matriz_geral[0][0]!=0 and self.matriz_geral[0][1]!=0 and self.matriz_geral[0][2]!=0 and self.matriz_geral[1][0]!=0 and self.matriz_geral[1][1]!=0 and self.matriz_geral[1][2]!=0 and self.matriz_geral[2][0]!=0 and self.matriz_geral[2][1]!=0 and self.matriz_geral[2][2]!=0:
             return 0
             
-   #def limpa_jogadas():
+   def limpa_jogadas(self):
+       self.turn = 1
+       self.matriz_geral=[[0,0,0],[0,0,0],[0,0,0]]
+       self.lista_jogadas = []
+       
+       
+       
