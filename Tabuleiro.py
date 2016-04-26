@@ -1,7 +1,6 @@
-# -*- coding: utf-8 -*-
 import tkinter as tk
 
-#from jogo import Jogo as jp
+from jogo import Jogo as jg
 
 class Tabuleiro:
     def __init__(self):
@@ -17,6 +16,7 @@ class Tabuleiro:
         self.window.columnconfigure(0, minsize=100, weight=1)
         self.window.columnconfigure(1, minsize=100, weight=1)
         self.window.columnconfigure(2, minsize=100, weight=1)
+        self.jg.jg()
         
         #Botoões
         self.botão0_0 = tk.Button(self.window)
@@ -226,5 +226,10 @@ class Tabuleiro:
         self.turn += 1
         self.botão2_2.configure(state= "disabled")
 
+<<<<<<< HEAD
 TicTac = Tabuleiro()
 TicTac.iniciar()
+=======
+tic-tac-toe = Tabuleiro()
+tic-tac-toe.iniciar()
+>>>>>>> e42b92eefbfa16819bee3e032cff18d5efb3d8f4
