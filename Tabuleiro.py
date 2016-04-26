@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*-
 import tkinter as tk
 
+from jogo import Jogo
 
 class Tabuleiro:
     def __init__(self):
@@ -169,5 +169,5 @@ class Tabuleiro:
         self.turn += 1
         self.botão2_2.configure(state= "disabled")
 
-Jogo = Tabuleiro()
-Jogo.iniciar()
+tic-tac-toe = Tabuleiro()
+tic-tac-toe.iniciar()
