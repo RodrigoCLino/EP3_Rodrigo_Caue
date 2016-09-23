@@ -1,7 +1,7 @@
 class Jogo:
 
    def __init__(self):
-       self.turn = 1
+       self.turn = 10
        self.matriz_geral=[[0,0,0],[0,0,0],[0,0,0]]
        self.lista_jogadas = []
        
